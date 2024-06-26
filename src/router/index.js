@@ -13,6 +13,11 @@ const routes = [
     path: '/about',
     name: 'about',
     component: () => import('../views/AboutView')
+  },
+  {
+    path: '/bilibiliFooter',
+    name: 'bilibiliFooter',
+    component: () => ('../components/FooterBar/index.vue')
   }
 ]
 

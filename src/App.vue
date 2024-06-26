@@ -1,9 +1,6 @@
 <template>
   <div id="app">
-    <nav>
-      <router-link to="/">Home</router-link>
-      <router-link to="/about">About</router-link>
-    </nav>
+    <bilibiliFooter></bilibiliFooter>
     <router-view />
   </div>
 </template>
@@ -13,12 +10,17 @@
 
 
 <script>
+import bilibiliFooter from '../src/components/FooterBar/index.vue'
 export default {
   name: 'App',
   methods: {
     handleClick() {
       console.log('click')
     }
+  },
+  components: {
+    bilibiliFooter
   }
+
 }
 </script>
