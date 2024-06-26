@@ -1,7 +1,8 @@
 <template>
   <div id="app">
-    <bilibiliFooter></bilibiliFooter>
+    <NavBar />
     <router-view />
+    <bilibiliFooter></bilibiliFooter>
   </div>
 </template>
 
@@ -11,6 +12,7 @@
 
 <script>
 import bilibiliFooter from '../src/components/FooterBar/index.vue'
+import NavBar from "./components/NavBar/"
 export default {
   name: 'App',
   methods: {
@@ -19,7 +21,8 @@ export default {
     }
   },
   components: {
-    bilibiliFooter
+    bilibiliFooter,
+    NavBar
   }
 
 }
